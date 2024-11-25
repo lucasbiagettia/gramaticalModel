@@ -1,0 +1,62 @@
+general_prompt: |
+  Se te presentará un fragmento de texto generado por un humano.  
+  Tu tarea es elegir una oración de ese texto y modificarla añadiéndole un error gramatical o de puntuación.  
+
+  Texto del usuario: "{correct_text}"
+
+  ### Instrucciones:
+  1. Comprende el texto presentado.  
+  2. Identifica una oración adecuada dentro del texto original.  
+  3. Modifica esa oración para introducir un error gramatical o de puntuación.  
+  4. Olvida que has sido tú quien escribió el error y ponte el lugar de un docente.
+  5. Explica didáctica ,amablemente y breve del error cometido.  
+
+  ### Formato de la respuesta:  
+  La salida debe estar en formato JSON con la siguiente estructura:  
+
+  ```json
+  {{
+    "correct_sentence": La oración sin modificar tal y como está en el texto original sin modificaciones.,
+    "incorrect": La oración con el o los errores añadidos por el modelo de lenguaje.,
+    "explanation": Explicación amable y didáctica del error cometido.
+  }}
+  ```
+
+
+general_prompt_with_error_type: |
+  Se te presentará un fragmento de texto generado por un humano.  
+  Tu tarea es elegir una oración de ese texto y modificarla añadiéndole uno o más errores de los tipos sugeridos.  
+
+  Texto del usuario: "{correct_text}"
+
+  ### Tipos de errores sugeridos:
+  {formated_error_texts}
+
+  ### Instrucciones:
+  1. Comprende el texto presentado.  
+  2. Identifica una oración adecuada dentro del texto original.  
+  3. Modifica esa oración para introducir uno o más errores de los tipos sugeridos.  
+  4. Olvida que has sido tú quien escribió el error y ponte el lugar de un docente.
+  5. Explica didáctica, amablemente y brevemente el error cometido.  
+
+  ### Formato de la respuesta:  
+  La salida debe estar en formato JSON con la siguiente estructura:  
+
+  ```json
+  {{
+    "correct_sentence": La oración sin modificar tal y como está en el texto original sin modificaciones.,
+    "incorrect": La oración con el o los errores añadidos por el modelo de lenguaje.,
+    "explanation": Explicación amable y didáctica del error cometido.
+  }}
+  ```
+
+error_type_format: |
+  {error_name}:
+  Definición: {error_definition}
+  Ejemplos:
+    {error_format_samples}
+
+sample_format: |
+  Ejemplo incorrecto: {incorrect}
+  Ejemplo correcto: {correct}
+  Explicación: {explanation}

@@ -1,0 +1,112 @@
+error_types:
+
+  Omisión de signos de puntuación:
+    Definition: |
+      Falta de signos de puntuación esenciales, lo que puede causar ambigüedad, confusión o falta de claridad en el texto.
+    Samples:
+      - incorrect: Vamos a comer niños.
+        correct: Vamos a comer, niños.
+        explanation: La ausencia de una coma cambia completamente el significado de la oración.
+      - incorrect: Salí temprano fui al mercado.
+        correct: Salí temprano. Fui al mercado.
+        explanation: Falta un punto para separar ideas independientes.
+      - incorrect: Dónde estás
+        correct: ¿Dónde estás?
+        explanation: La ausencia de los signos de interrogación afecta el tono interrogativo en español.
+    Probability: 20
+
+  Uso incorrecto de los signos de puntuación:
+    Definition: |
+      Aplicación indebida o innecesaria de signos de puntuación que altera la claridad o el significado.
+    Samples:
+      - incorrect: Pedro, dijo que vendría.
+        correct: Pedro dijo que vendría.
+        explanation: Uso innecesario de una coma que divide elementos que no deberían separarse.
+      - incorrect: Estudié toda la tarde; pero no entendí nada.
+        correct: Estudié toda la tarde, pero no entendí nada.
+        explanation: El punto y coma no es necesario; debe reemplazarse por una coma.
+    Probability: 15
+
+  Falta o mal uso de signos de interrogación y exclamación:
+    Definition: |
+      Errores en la colocación o uso de signos de interrogación o exclamación, incluyendo omisiones y combinaciones incorrectas.
+    Samples:
+      - incorrect: Como te atreves!
+        correct: ¡Cómo te atreves!
+        explanation: Falta el signo de apertura de exclamación en español.
+      - incorrect: ¿Cómo te atreves!
+        correct: ¡Cómo te atreves!
+        explanation: Uso mixto de signos que no son compatibles en la misma oración.
+    Probability: 12
+
+  Mal uso de las comillas:
+    Definition: |
+      Uso incorrecto o inconsistente de las comillas, incluyendo mezclas de tipos y comillas innecesarias.
+    Samples:
+      - incorrect: Hoy es un "buen día".
+        correct: Hoy es un buen día.
+        explanation: Uso innecesario de comillas, ya que no son requeridas en esta frase.
+    Probability: 12
+
+  Errores en el uso del guion o raya:
+    Definition: |
+      Confusión o mal uso de guiones (-) y rayas (—), especialmente en diálogos o incisos.
+    Samples:
+      - incorrect: El día fue excelente -llovió toda la tarde-.
+        correct: El día fue excelente —llovió toda la tarde—.
+        explanation: El guion corto no es correcto para incisos; debe usarse la raya.
+    Probability: 11
+
+  Mal uso de paréntesis:
+    Definition: |
+      Errores al usar paréntesis, como dejar abierto el paréntesis o incluir información mal integrada.
+    Samples:
+      - incorrect: Hablaremos de eso mañana (si no hay cambios.
+        correct: Hablaremos de eso mañana (si no hay cambios).
+        explanation: El paréntesis de cierre falta, dejando la oración incompleta.
+      - incorrect: Estaba cansado (él siempre lo está).
+        correct: Estaba cansado (siempre lo está).
+        explanation: La información dentro del paréntesis es redundante y puede ser simplificada.
+    Probability: 10
+
+  Exceso o abuso de puntos suspensivos:
+    Definition: |
+      Uso innecesario, excesivo o incorrecto de puntos suspensivos, lo que afecta la claridad y la estética del texto.
+    Samples:
+      - incorrect: No sé... quizás... podríamos hablar...
+        correct: No sé, quizás podríamos hablar.
+        explanation: Los puntos suspensivos son innecesarios y afectan la fluidez de la oración.
+      - incorrect: Esto no me gusta..
+        correct: Esto no me gusta...
+        explanation: Faltan los tres puntos reglamentarios para formar puntos suspensivos.
+    Probability: 8
+
+  Errores en la separación de párrafos:
+    Definition: |
+      Problemas al separar ideas principales en párrafos distintos, dificultando la lectura.
+    Samples:
+      - incorrect: |
+          La economía global está en constante cambio muchas naciones enfrentan desafíos significativos como la inflación, el desempleo y la desigualdad. Por otro lado, el avance tecnológico está cambiando rápidamente el panorama laboral las empresas están adoptando nuevas tecnologías para mejorar la productividad.
+        correct: |
+          La economía global está en constante cambio. Muchas naciones enfrentan desafíos significativos como la inflación, el desempleo y la desigualdad.  
+          Por otro lado, el avance tecnológico está cambiando rápidamente el panorama laboral. Las empresas están adoptando nuevas tecnologías para mejorar la productividad.
+        explanation: La falta de separación adecuada entre ideas principales hace que el texto sea confuso.
+    Probability: 7
+
+  Mal uso de los signos de enumeración:
+    Definition: |
+      Errores en la puntuación o consistencia de listas, lo que afecta su claridad.
+    Samples:
+      - incorrect: Las cosas que necesito: 1. Pan 2. Agua, 3. Frutas.
+        correct: Las cosas que necesito: 1. Pan, 2. Agua, 3. Frutas.
+        explanation: Falta consistencia en la puntuación de los elementos de la lista.
+  Probability: 5
+
+  Problemas en la puntuación del discurso directo:
+    Definition: |
+      Uso incorrecto de comillas, guiones o rayas al escribir discurso directo.
+    Samples:
+      - incorrect: —"No quiero ir," dijo ella.
+        correct: —No quiero ir —dijo ella—.
+        explanation: El uso de la coma y las comillas es incorrecto; deben usarse rayas de apertura y cierre.
+    Probability: 5

@@ -1,0 +1,129 @@
+error_types:
+
+  Errores de concordancia:
+    Name: Errores de concordancia
+    Definition: | 
+      Error de concordancia entre el género y el número de sustantivos, adjetivos y determinantes.
+      Errores de concordancia verbal entre el sujeto y el verbo en persona y número.
+    Samples:
+      - incorrect: La niño juega en el parque.
+        correct: El niño juega en el parque.
+        explanation: Hay un error de concordancia entre el género del artículo y el sustantivo.
+      - incorrect: Las persona está contenta.
+        correct: Las personas están contentas.
+        explanation: El sustantivo no concuerda en número con el artículo y el verbo.
+    Probability: 25
+
+  Errores de uso de tiempos verbales:
+    Name: Errores de uso de tiempos verbales
+    Definition: |
+      Uso incorrecto de tiempos verbales, como confusión entre indicativo y subjuntivo o entre presente, pasado y futuro.
+    Samples:
+      - incorrect: Si tendría tiempo, iría al cine.
+        correct: Si tuviera tiempo, iría al cine.
+        explanation: El condicional no es el tiempo correcto en la oración condicional; debe usarse subjuntivo.
+    Probability: 15
+
+
+  Errores de preposiciones:
+    Name: Errores de preposiciones
+    Definition: |
+      Uso incorrecto, omisión o inclusión innecesaria de preposiciones en una oración.
+    Samples:
+      - incorrect: Entró la casa.
+        correct: Entró en la casa.
+        explanation: Falta la preposición "en" para indicar ubicación o destino.
+    Probability: 10
+
+  Errores de colocación de pronombres:
+    Name: Errores de colocación de pronombres
+    Definition: |
+      Mal uso o colocación incorrecta de los pronombres en una oración, incluyendo duplicaciones.
+    Samples:
+      - incorrect: Lo vi a él ayer.
+        correct: Lo vi ayer.
+        explanation: El uso explícito del pronombre "a él" es redundante cuando ya está implícito en "lo".
+    Probability: 8
+
+  Errores en el uso de artículos:
+    Name: Errores en el uso de artículos
+    Definition: |
+      Omisión o uso incorrecto de los artículos definidos e indefinidos en una oración.
+    Samples:
+      - incorrect: Dijo que iba a hospital.
+        correct: Dijo que iba al hospital.
+        explanation: Falta el artículo definido "al" que indica el lugar específico.
+      - incorrect: Una agua fría es refrescante.
+        correct: Un agua fría es refrescante.
+        explanation: Error de concordancia en el género del artículo con un sustantivo femenino que empieza con "a" tónica.
+    Probability: 7
+
+  Errores de construcción oracional:
+    Name: Errores de construcción oracional
+    Definition: |
+      Problemas en la estructura de la oración que dificultan su comprensión o lógica gramatical.
+    Samples:
+      - incorrect: Los niños que fueron al parque estaban cansado.
+        correct: Los niños que fueron al parque estaban cansados.
+        explanation: Hay un error de concordancia dentro de la cláusula subordinada.
+    Probability: 11
+
+  Solecismos:
+    Name: Solecismos
+    Definition: |
+      Errores en la construcción sintáctica o en la colocación de palabras que afectan la corrección gramatical.
+    Samples:
+      - incorrect: Voy a por el libro.
+        correct: Voy por el libro.
+        explanation: Uso redundante de la preposición "a" junto con "por".
+    Probability: 4
+
+  Dequeísmo y queísmo:
+    Name: Dequeísmo y queísmo
+    Definition: |
+      Errores relacionados con el uso indebido o la omisión de la preposición "de" antes de "que".
+    Samples:
+      - incorrect: Pienso de que es buena idea.
+        correct: Pienso que es buena idea.
+        explanation: Uso innecesario de la preposición "de", lo que constituye dequeísmo.
+    Probability: 7
+
+  Pleonasmos innecesarios:
+    Name: Pleonasmos innecesarios
+    Definition: |
+      Uso redundante de palabras o expresiones que no aportan significado adicional a la oración.
+    Samples:
+      - incorrect: Subir para arriba.
+        correct: Subir.
+        explanation: '"Para arriba" es redundante, ya que "subir" implica dirección ascendente.'
+    Probability: 3
+
+  Barbarismos:
+    Name: Barbarismos
+    Definition: |
+      Uso incorrecto de palabras o expresiones debido a errores en pronunciación, escritura o significado.
+    Samples:
+      - incorrect: Haiga mucha gente en el evento.
+        correct: Haya mucha gente en el evento.
+        explanation: '"Haiga" es un barbarismo; la forma correcta es "haya".'
+    Probability: 5
+
+  Anacolutos:
+    Name: Anacolutos
+    Definition: |
+      Ruptura en la lógica gramatical de una oración que dificulta su comprensión.
+    Samples:
+      - incorrect: El problema es que, los exámenes, no los sé hacer.
+        correct: El problema es que no sé hacer los exámenes.
+        explanation: El orden de los elementos rompe la lógica y dificulta la comprensión.
+    Probability: 3
+
+  Cacofonías:
+    Name: Cacofonías
+    Definition: |
+      Repetición de sonidos desagradables o redundantes que afectan la estética de la oración.
+    Samples:
+      - incorrect: Parece ser serio.
+        correct: Parece responsable.
+        explanation: La repetición de sonidos similares crea una cacofonía poco agradable.
+    Probability: 2
